@@ -15,13 +15,16 @@
  */
 
 /**
+ * 遍历链表，把原链表作为key，新链表作为value，存入map中
+ * 然后复制next和random
+ * 
  * @param {Node} head
  * @return {Node}
  */
 var copyRandomList = function (head) {
     if (!head) return null
 
-    let map = new Map()
+    const map = new Map()
 
     for (let cur = head; cur != null; cur = cur.next) {
         map.set(cur, new Node(cur.val))
