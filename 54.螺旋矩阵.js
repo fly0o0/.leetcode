@@ -6,6 +6,8 @@
 
 // @lc code=start
 /**
+ * 可以理解为一个扫地机器人，沿着边界走一个螺旋，只能绕着边界内跑动，所以得规定好四边界。
+ * 
  * @param {number[][]} matrix
  * @return {number[]}
  */
